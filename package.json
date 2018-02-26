@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js",
+    "build-client": "cd ../iot-example-client && npm run build && cd - && cp -R ../iot-example-client/build ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
   }
 }
