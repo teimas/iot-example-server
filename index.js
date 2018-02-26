@@ -30,5 +30,5 @@ calibrate = (v) => {
 
 app.get("/value/:value", function (req, res) {
   calibrate(parseInt(req.params.value));
-  res.sendStatus(200).send("OK\r");
+  res.sendStatus(200);
 });
